@@ -1,0 +1,20 @@
+/* Tipografía y estilo para el subtítulo */
+.highlight-text {
+    display: block;
+    font-size: 24px; /* Tamaño de fuente más grande */
+    font-family: 'Righteous', sans-serif; /* Tipografía llamativa */
+    color: #ffffff; /* Color de texto */
+    background-color: #A31E1E; /* Color de fondo rojo vinotinto */
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold; /* Tipografía más gruesa */
+    border: 2px solid #A31E1E; /* Borde color rojo vinotinto */
+  }
+  
+  /* Estilo para el iframe */
+  .styled-iframe {
+    border: 5px solid #A31E1E; /* Bordes alrededor del mapa */
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  

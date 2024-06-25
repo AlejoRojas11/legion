@@ -1,0 +1,70 @@
+/* Importar la tipografía Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+
+.section {
+  background-color: #fdfdfb !important; /* Fondo negro */
+  color: #0f0f0e; /* Texto en color amarillo claro */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.containermain{
+  width: 200px !important; 
+}
+
+.card-custom {
+  background-color: #000000; /* Fondo rojo vinotinto */
+  color: #FFFFFF; /* Texto blanco */
+  border: 2px solid #ECE66D; /* Borde amarillo claro */ 
+}
+
+.card-text {
+  font-family: 'Montserrat', sans-serif; /* Tipografía Montserrat */
+  font-weight: 800; /* Grosor extra-bold */
+  color: #fffcfc !important; /* Color del título en amarillo claro */
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif; /* Tipografía Montserrat */
+  font-weight: 800; /* Grosor extra-bold */
+  color: #ffe9e9 !important; /* Color del título en amarillo claro */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img {
+  border-bottom: 2px solid #ECE66D; /* Borde inferior de la imagen */
+}
+
+.animated-title {
+  font-family: 'Montserrat', sans-serif; /* Tipografía Montserrat */
+  font-weight: 800; /* Grosor extra-bold */
+  animation: blink 1.5s infinite; /* Animación de parpadeo */
+}
+
+@keyframes blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.2rem; /* Ajuste del tamaño de fuente para dispositivos móviles */
+  }
+}
