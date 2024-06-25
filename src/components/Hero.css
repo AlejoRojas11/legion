@@ -2,7 +2,7 @@
   position: relative;
   color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: relative;
   align-items: center;
   height: 100vh; /* Ajustar altura según diseño */
   overflow: hidden; /* Oculta el desbordamiento del contenido */
@@ -19,12 +19,55 @@
   background-position: center; /* Centra la imagen en el contenedor */
   opacity: 0.4; /* Opacidad de la imagen de fondo */
 }
+.btn-whatsapp {
+  background-color: #25D366 !important;
+  border-color: #25D366 !important;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; /* Center the button */
+}
+
+.btn-whatsapp:hover {
+  background-color: #20b358 !important;
+  border-color: #20b358 !important;
+}
+
+/* Animation for the button */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate__pulse {
+  animation: pulse 2s infinite;
+}
+
+.mr-2 {
+  margin-right: 8px;
+}
 
 .course-video {
-  width: 100%;
-  max-width: 800px;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
   height: auto;
-  object-fit: cover;
+  object-fit: contain; /* Ajuste del tamaño del video */
+}
+.text2{
+  color: black !important;
+}
+.courses-container {
+  max-width: 100%;
+  width: 100%;
 }
 
 .btn-group .btn-animation {

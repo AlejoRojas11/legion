@@ -14,17 +14,12 @@ const About = () => {
                 <Card.Body>
                   <Card.Title className="text-center mb-3">Nuestra Academia</Card.Title>
                   <Card.Text>
-                    <p >Hemos formado a numerosos barberos que han logrado destacarse en el campo.</p>
+                    <p className="card-text" >Hemos formado a numerosos barberos que han logrado destacarse en el campo.</p>
                     <div className="video-container">
-                      <iframe 
-                        width="100%" 
-                        height="315" 
-                        src="https://www.youtube.com/embed/tu-video-id" // Reemplaza tu-video-id con el ID del video
-                        title="Video sobre la Academia" 
-                        frameBorder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowFullScreen
-                      ></iframe>
+                      <video className="course-video" controls>
+                        <source src="video-intro.mp4" type="video/mp4" />
+                        Tu navegador no soporta la reproducción de videos.
+                      </video>
                     </div>
                   </Card.Text>
                 </Card.Body>

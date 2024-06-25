@@ -1,6 +1,6 @@
 import React from 'react';
-import './Hero.css'; 
-import Courses from './Courses'
+import './Hero.css';
+import Courses from './Courses';
 
 const Hero = () => {
   return (
@@ -10,13 +10,9 @@ const Hero = () => {
         <h2 className="display-4 mb-4 southland-font">Bienvenidos a Legion Club Barbería VIP</h2>
         <p className="lead mb-4">Transformando estilos, transformando vidas.</p>
         <div className="video-container mb-4">
-
-        <Courses />
-          {/* <video autoPlay muted loop className="hero-video">
-            <source src="/ruta/al/video.mp4" type="video/mp4" />
-          
-            Tu navegador no soporta video HTML5.
-          </video> */}
+          <div className="courses-container">
+            <Courses />
+          </div>
         </div>
       </div>
     </section>
