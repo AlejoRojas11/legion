@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Card } from 'react-bootstrap';
 import axios from 'axios';
+import './Contact.css'
 
 const Contact = () => {
   const [formData, setFormData] = useState({

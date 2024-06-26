@@ -32,8 +32,8 @@
   }
 
   .custom-button {
-    background-color: #A31E1E; /* Color rojo vinotinto */
-    border-color: #A31E1E; /* Color del borde */
+    background-color: #A31E1E !important; /* Color rojo vinotinto */
+    border-color: #A31E1E !important; /* Color del borde */
     color: #ffffff; /* Color del texto */
     font-weight: bold; /* Negrita */
   }
