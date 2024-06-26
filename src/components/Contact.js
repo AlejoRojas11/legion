@@ -1,27 +1,79 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import './Contact.css'; // Importa el archivo CSS personalizado
+import React, { useState } from 'react';
+import { Container, Row, Col, Form, Button, Card } from 'react-bootstrap';
+import axios from 'axios';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    nombre: '', // Asegúrate de que el nombre del campo coincida con la columna en la base de datos
+    email: '',
+    telefono: ''
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await axios.post('http://localhost:3000/api/submit-form', formData);
+      console.log(response.data); // Manejar la respuesta del servidor según sea necesario
+      // Aquí puedes redirigir o mostrar un mensaje de éxito al usuario
+    } catch (error) {
+      console.error('Error al enviar el formulario:', error);
+      // Manejar el error (mostrar un mensaje al usuario, etc.)
+    }
+  };
+
   return (
     <section id="contact" className="section py-5">
       <Container>
         <h2 className="text-center mb-4">Contacto</h2>
-        <Row className="justify-content-center">
+        <Row className="justify-content-center mt-5">
           <Col md={8}>
-            <div className="embed-responsive embed-responsive-16by9">
-              <span className="highlight-text">Donde puedes encontrarnos</span>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.7334036977977!2d-75.68535932546816!3d4.815773540650184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e388787ceb38f73%3A0xe5e2ba791d1afe67!2sLeggion%20Club%20Barberia!5e0!3m2!1ses-419!2sco!4v1719073333344!5m2!1ses-419!2sco"
-                width="600"
-                height="450"
-                frameBorder="0"
-                className="embed-responsive-item styled-iframe"
-                allowFullScreen=""
-                aria-hidden="false"
-                tabIndex="0">
-              </iframe>
-            </div>
+            <Card className="border-primary custom-card">
+              <Card.Body className="bg-white shadow">
+                <Form onSubmit={handleSubmit}>
+                  <Form.Group controlId="formBasicName">
+                    <Form.Label>Nombre</Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="Ingresa tu nombre"
+                      name="nombre"
+                      value={formData.nombre}
+                      onChange={handleInputChange}
+                    />
+                  </Form.Group>
+
+                  <Form.Group controlId="formBasicEmail">
+                    <Form.Label>Correo electrónico</Form.Label>
+                    <Form.Control
+                      type="email"
+                      placeholder="Ingresa tu correo electrónico"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                    />
+                  </Form.Group>
+
+                  <Form.Group controlId="formBasicPhone">
+                    <Form.Label>Teléfono</Form.Label>
+                    <Form.Control
+                      type="tel"
+                      placeholder="Ingresa tu teléfono"
+                      name="telefono"
+                      value={formData.telefono}
+                      onChange={handleInputChange}
+                    />
+                  </Form.Group>
+
+                  <Button className="custom-button" type="submit">
+                    Inscribirse
+                  </Button>
+                </Form>
+              </Card.Body>
+            </Card>
           </Col>
         </Row>
       </Container>

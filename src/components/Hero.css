@@ -2,9 +2,9 @@
   position: relative;
   color: #fff;
   display: flex;
-  justify-content: relative;
+  justify-content: center;
   align-items: center;
-  height: 100vh; /* Ajustar altura según diseño */
+  height: 110vh; /* Ajustar altura según diseño */
   overflow: hidden; /* Oculta el desbordamiento del contenido */
 }
 
@@ -19,6 +19,7 @@
   background-position: center; /* Centra la imagen en el contenedor */
   opacity: 0.4; /* Opacidad de la imagen de fondo */
 }
+
 .btn-whatsapp {
   background-color: #25D366 !important;
   border-color: #25D366 !important;
@@ -26,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto; /* Center the button */
+  margin: 0 auto; /* Centra el botón */
 }
 
 .btn-whatsapp:hover {
@@ -57,17 +58,26 @@
 
 .course-video {
   max-width: 100%;
-  max-height: 100%;
-  width: auto;
   height: auto;
   object-fit: contain; /* Ajuste del tamaño del video */
 }
-.text2{
+
+.text2 {
   color: black !important;
 }
+
 .courses-container {
   max-width: 100%;
   width: 100%;
+}
+
+.progress-container {
+  width: 85%;
+  margin: 0 auto; /* Centra la barra de progreso */
+}
+
+.progress {
+  height: 25px;
 }
 
 .btn-group .btn-animation {
@@ -80,15 +90,12 @@
     display: block;
     width: 100%;
   }
-}
-@media (max-width: 768px) {
+
   .btn-group {
     flex-direction: column;
   }
 
-  .btn-group .btn-animation {
-    margin: 10px 0;
-    display: block;
-    width: 100%;
+  .progress {
+    height: 20px;
   }
 }
