@@ -1,44 +1,87 @@
-/* Estilos para el cuerpo */
-.body-wrapper {
-    padding: 20px; /* Espaciado del borde */
-    background-color: #f8f9fa; /* Color de fondo del contenedor */
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  background-color: #fff;
+}
+
+.body-content {
+  padding: 2rem 0;
+}
+
+h2 {
+  color: #A31E1E;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card-title {
+  color: #A31E1E;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #A31E1E;
+  border-color: #A31E1E;
+}
+
+.btn-primary:hover {
+  background-color: #7a1717;
+  border-color: #7a1717;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+.form-control:focus {
+  border-color: #A31E1E;
+  box-shadow: 0 0 0 0.2rem rgba(163, 30, 30, 0.25);
+}
+
+.embed-responsive {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
   }
-  
-  .body-card {
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .btn {
     width: 100%;
-    max-width: 1200px; /* Máximo ancho de la tarjeta */
-    background-color: #ffffff; /* Color de fondo de la tarjeta */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
-    border: none; /* Sin borde */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 20px; /* Espaciado interno */
-    box-sizing: border-box;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800; /* Extra Bold */
+}
+
+@media (max-width: 576px) {
+  .body-content {
+    padding: 1rem 0;
   }
-  
-  p {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 200; /* Extra Light */
-    font-style: italic;
-    color: #333; /* Color del texto */
+
+  h2 {
+    font-size: 1.3rem;
   }
-  
-  /* Ajustes adicionales para el diseño responsive */
-  @media (max-width: 768px) {
-    .body-wrapper {
-      padding: 10px;
-    }
-  
-    .body-card {
-      padding: 15px;
-    }
+
+  .card-title {
+    font-size: 1.1rem;
   }
-  
+}
