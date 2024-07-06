@@ -20,6 +20,9 @@ body {
   z-index: -1000;
   background-size: cover;
 }
+video::-webkit-media-controls {
+  display: none !important;
+}
 
 .container {
   position: relative;

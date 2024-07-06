@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import './Body.css';
 import ContactForm from './Contact';
@@ -7,9 +7,26 @@ import clase from './img/clase.JPG'
 import bgBody from './img/bgBody.mp4'
 
 const Body = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(error => {
+        console.log("Autoplay was prevented:", error);
+      });
+    }
+  }, []);
+
   return (
     <main className="body-content">
-      <video autoPlay loop muted className="video-background">
+      <video 
+        ref={videoRef}
+        autoPlay 
+        loop 
+        muted 
+        playsInline
+        className="video-background"
+      >
         <source src={bgBody} type="video/mp4" />
         Tu navegador no soporta el elemento de video.
       </video>
