@@ -14,8 +14,8 @@ const App = () => {
       <main className="main-content">
         <Body />
       </main>
-      <Footer />
-      <Body/>
+     
+      
       
        
       <Footer/>

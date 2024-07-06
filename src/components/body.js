@@ -4,10 +4,15 @@ import './Body.css';
 import ContactForm from './Contact';
 import CourseWidget from './CourseWidget';
 import clase from './img/clase.JPG'
+import bgBody from './img/bgBody.mp4'
 
 const Body = () => {
   return (
     <main className="body-content">
+      <video autoPlay loop muted className="video-background">
+        <source src={bgBody} type="video/mp4" />
+        Tu navegador no soporta el elemento de video.
+      </video>
       <Container>
         {/* Sección de Información de la Academia */}
         <section className="my-5">
