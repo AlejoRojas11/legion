@@ -5,6 +5,8 @@ import Body from './components/body';
 import Footer from './components/Footer';
 import './styles.css';
 
+
+
 const App = () => {
   return (
     <div className="app-container">
@@ -13,6 +15,13 @@ const App = () => {
         <Body />
       </main>
       <Footer />
+      <Body/>
+      
+       
+      <Footer/>
+     
+   
+      
     </div>
   );
 };
