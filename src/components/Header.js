@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import logo from './img/escudo negro.png'
+import logo from './img/escudo.png'
 
 const Header = () => {
   return (

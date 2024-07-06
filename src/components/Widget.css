@@ -1,0 +1,139 @@
+/* Widget.css */
+
+.course-widget {
+  position: relative;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border-radius: 10px;
+  border: none;
+}
+
+.course-widget::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Fondo negro difuminado */
+  z-index: 1;
+}
+
+.course-widget .card-body {
+  position: relative;
+  z-index: 2;
+}
+
+.widget-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.widget-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.widget-info p {
+  margin: 5px 0;
+}
+
+.widget-payment-options {
+  margin-top: 10px;
+}
+
+.widget-payment-options p {
+  margin: 0;
+}
+
+.widget-payment-options ul {
+  padding-left: 20px;
+}
+
+.widget-payment-options li {
+  list-style: none;
+}
+
+.widget-button {
+  margin-top: 20px;
+}
+
+.course-widget p,
+.course-widget ul,
+.course-widget li {
+  color: white;
+}
+
+.course-widget p,
+.course-widget ul,
+.course-widget li {
+  color: white;
+}
+
+.course-widget p,
+.course-widget ul,
+.course-widget li span {
+  color: #ece66d;
+}
+
+/* Estilos específicos para los signos pesos, puntos, paréntesis, comas */
+.course-widget p span,
+.course-widget ul li span {
+  color: #ece66d;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .course-widget {
+    margin-bottom: 15px;
+  }
+
+  .widget-title {
+    font-size: 1.3rem;
+  }
+
+  .widget-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .widget-title {
+    font-size: 1.1rem;
+  }
+
+  .widget-subtitle {
+    font-size: 1rem;
+  }
+}
+
+.widget-button {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .widget-button.success {
+    background-color: #A31E1E; /* Verde para éxito */
+    border-color: #28a745;
+  }
+  
+  .widget-button.success:hover {
+    background-color: #A31E1E; /* Verde más oscuro al pasar el ratón */
+    border-color: #A31E1E;
+  }
+  
+  .widget-button.primary {
+    background-color: #007bff; /* Azul para primario */
+    border-color: #007bff;
+  }
+  
+  .widget-button.primary:hover {
+    background-color: #ece66d; /* Azul más oscuro al pasar el ratón */
+    border-color: #ece66d;
+  }
+  

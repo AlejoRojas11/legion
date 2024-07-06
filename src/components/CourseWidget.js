@@ -1,9 +1,10 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { FaCalendar, FaClock, FaDollarSign, FaWhatsapp } from 'react-icons/fa';
-import './Body.css';
+import './Widget.css';
 import Estu from './img/Estudiantes.JPG'
 import Tijeras from './img/Tijeras.JPG'
+import bgwidget from './img/bgWidget.jpg'
 
 const CourseWidget = ({ title, subtitle, details, price, paymentOptions, buttonText, whatsappLink, backgroundImage }) => {
   return (
@@ -26,7 +27,7 @@ const CourseWidget = ({ title, subtitle, details, price, paymentOptions, buttonT
           </ul>
         </div>
         {whatsappLink ? (
-          <Button href={whatsappLink} target="_blank" variant="success" className="widget-button">
+          <Button href={whatsappLink} target="_blank"  className="widget-button">
             <FaWhatsapp /> {buttonText}
           </Button>
         ) : (
@@ -69,7 +70,7 @@ const BodyComponent = () => {
         ]}
         buttonText="¡Contáctanos por WhatsApp!"
         whatsappLink="https://wa.me/p/7278206612262167/573234263937"
-        backgroundImage="/img/clase.jpg"
+        backgroundImage={bgwidget}
       />
       <CourseWidget
   title="Masterclass de Barbería"

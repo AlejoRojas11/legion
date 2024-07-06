@@ -3,8 +3,8 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import './Body.css';
 import ContactForm from './Contact';
 import CourseWidget from './CourseWidget';
-import clase from './img/clase.JPG'
-import bgBody from './img/bgBody.mp4'
+import clase from './img/clase.JPG';
+import bgBody from './img/bgBody.mp4';
 
 const Body = () => {
   const videoRef = useRef(null);
@@ -33,7 +33,8 @@ const Body = () => {
       <Container>
         {/* Sección de Información de la Academia */}
         <section className="my-5">
-          <h2 className="text-center mb-4">Nuestra Academia de Barbería</h2>
+        <h2 className="text-center mb-4">Nuestra <span className="module-number">Academia</span> de Barbería</h2>
+
           <Row>
             <Col md={6}>
               <p>En Leggion Academia, nos enorgullece ofrecer una experiencia única y de calidad en la industria barberil. Nuestra academia está diseñada para aquellos que desean destacarse en el apasionante mundo de la barbería, brindándoles las habilidades y conocimientos necesarios para convertirse en profesionales exitosos.</p>
@@ -46,7 +47,7 @@ const Body = () => {
 
         {/* Nueva sección: Oportunidades de Perfeccionamiento */}
         <section className="my-5">
-          <h2 className="text-center mb-4">Oportunidades de Perfeccionamiento</h2>
+          <h2 className="text-center mb-4" > <span className="module-number" > Oportunidades</span> de Perfeccionamiento</h2>
           <Row>
             <Col md={6}>
               <h3>Curso Básico</h3>
@@ -56,11 +57,11 @@ const Body = () => {
               <h3>Curso Avanzado</h3>
               <p>En el curso avanzado, exploramos otros servicios en barbería como:</p>
               <ul>
-                <li>Limpiezas faciales 🧖‍♂️</li>
-                <li>Decoloración en barbería 💈</li>
-                <li>Pigmentación de cejas y barbas con diferentes pigmentos 🎨</li>
-                <li>Depilación con hilo ✨</li>
-                <li>Peinados creativos 💇‍♂️</li>
+                <li><span className="list-dot">•</span> Limpiezas faciales 🧖‍♂️</li>
+                <li><span className="list-dot">•</span> Decoloración en barbería 💈</li>
+                <li><span className="list-dot">•</span> Pigmentación de cejas y barbas con diferentes pigmentos 🎨</li>
+                <li><span className="list-dot">•</span> Depilación con hilo ✨</li>
+                <li><span className="list-dot">•</span> Peinados creativos 💇‍♂️</li>
               </ul>
             </Col>
           </Row>
@@ -73,28 +74,28 @@ const Body = () => {
           <p>El curso cuenta con toda la herramienta necesaria para las prácticas, además de recursos adicionales para prácticas. Además de los siguientes módulos:</p>
           <Row>
             <Col md={4}>
-              <h4>1. FUNDAMENTOS DE BARBERÍA</h4>
+              <h4><span className="module-number">1.</span> FUNDAMENTOS DE BARBERÍA</h4>
               <ul>
-                <li>Cómo ser un barbero íntegro con valores</li>
-                <li>Protocolo de atención al cliente</li>
-                <li>Técnicas universales y nombramiento de cortes</li>
-                <li>Estudio y anatomía del cabello</li>
+                <li><span className="list-dot">•</span> Cómo ser un barbero íntegro con valores</li>
+                <li><span className="list-dot">•</span> Protocolo de atención al cliente</li>
+                <li><span className="list-dot">•</span> Técnicas universales y nombramiento de cortes</li>
+                <li><span className="list-dot">•</span> Estudio y anatomía del cabello</li>
               </ul>
             </Col>
             <Col md={4}>
-              <h4>2. CONCEPTOS BÁSICOS DE LA BARBERÍA</h4>
+              <h4><span className="module-number">2.</span> CONCEPTOS BÁSICOS DE LA BARBERÍA</h4>
               <ul>
-                <li>Visagismo</li>
-                <li>Herramientas básicas</li>
-                <li>Estilos de corte</li>
+                <li><span className="list-dot">•</span> Visagismo</li>
+                <li><span className="list-dot">•</span> Herramientas básicas</li>
+                <li><span className="list-dot">•</span> Estilos de corte</li>
               </ul>
             </Col>
             <Col md={4}>
-              <h4>3. CORTES PROFESIONALES</h4>
+              <h4><span className="module-number">3.</span> CORTES PROFESIONALES</h4>
               <ul>
-                <li>Corte clásico</li>
-                <li>Fade</li>
-                <li>Barba</li>
+                <li><span className="list-dot">•</span> Corte clásico</li>
+                <li><span className="list-dot">•</span> Fade</li>
+                <li><span className="list-dot">•</span> Barba</li>
               </ul>
             </Col>
           </Row>
