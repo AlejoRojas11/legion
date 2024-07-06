@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
 import './Body.css';
+import ContactForm from './Contact'; 
+import CourseWidget from './CourseWidget'; // Importa el componente del formulario
 
 const Body = () => {
   return (
@@ -19,6 +21,14 @@ const Body = () => {
           </Row>
         </section>
 
+        <section className="my-5">
+  <h2 className="text-center mb-4">Curso Destacado</h2>
+  <Row className="justify-content-center">
+    <Col md={8} lg={6}>
+      <CourseWidget />
+    </Col>
+  </Row>
+</section>
         {/* Sección de Cursos */}
         <section className="my-5">
           <h2 className="text-center mb-4">Nuestros Cursos</h2>
@@ -49,32 +59,14 @@ const Body = () => {
             </Col>
           </Row>
         </section>
-
-        {/* Formulario de Contacto */}
         <section className="my-5">
           <h2 className="text-center mb-4">Contáctanos</h2>
-          <Form>
-            <Form.Group className="mb-3" controlId="formName">
-              <Form.Label>Nombre</Form.Label>
-              <Form.Control type="text" placeholder="Ingresa tu nombre" />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formEmail">
-              <Form.Label>Correo Electrónico</Form.Label>
-              <Form.Control type="email" placeholder="Ingresa tu email" />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formPhone">
-              <Form.Label>Teléfono</Form.Label>
-              <Form.Control type="tel" placeholder="Ingresa tu número de teléfono" />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formMessage">
-              <Form.Label>Mensaje</Form.Label>
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group>
-            <Button variant="primary" type="submit">
-              Enviar
-            </Button>
-          </Form>
+          <ContactForm /> {/* Usa el componente del formulario aquí */}
         </section>
+    
+
+
+export default Body;
       </Container>
     </main>
   );
