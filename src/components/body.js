@@ -3,6 +3,7 @@ import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
 import './Body.css';
 import ContactForm from './Contact'; 
 import CourseWidget from './CourseWidget'; // Importa el componente del formulario
+import { Link } from 'react-router-dom';
 
 const Body = () => {
   return (
@@ -33,18 +34,48 @@ const Body = () => {
         <section className="my-5">
           <h2 className="text-center mb-4">Nuestros Cursos</h2>
           <Row>
-            {/* Repetir esta Card para cada curso */}
-            <Col md={4} className="mb-4">
-              <Card>
-                <Card.Img variant="top" src="/path-to-course-image.jpg" />
-                <Card.Body>
-                  <Card.Title>Nombre del Curso</Card.Title>
-                  <Card.Text>Breve descripción del curso...</Card.Text>
-                  <Button variant="primary">Más información</Button>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
+      {/* Primera tarjeta */}
+      <Col md={4} className="mb-4">
+        <Card>
+          <Card.Img variant="top" src="/path-to-course-image1.jpg" />
+          <Card.Body>
+            <Card.Title>Nombre del Curso 1</Card.Title>
+            <Card.Text>Breve descripción del curso 1...</Card.Text>
+
+              <Button variant="primary">Más información</Button>
+
+          </Card.Body>
+        </Card>
+      </Col>
+
+      {/* Segunda tarjeta */}
+      <Col md={4} className="mb-4">
+        <Card>
+          <Card.Img variant="top" src="/path-to-course-image2.jpg" />
+          <Card.Body>
+            <Card.Title>Nombre del Curso 2</Card.Title>
+            <Card.Text>Breve descripción del curso 2...</Card.Text>
+
+            <Button variant="primary">Más información</Button>
+
+          </Card.Body>
+        </Card>
+      </Col>
+
+      {/* Tercera tarjeta */}
+      <Col md={4} className="mb-4">
+        <Card>
+          <Card.Img variant="top" src="/path-to-course-image3.jpg" />
+          <Card.Body>
+            <Card.Title>Nombre del Curso 3</Card.Title>
+            <Card.Text>Breve descripción del curso 3...</Card.Text>
+            
+            <Button variant="primary">Más información</Button>
+           
+          </Card.Body>
+        </Card>
+      </Col>
+    </Row>
         </section>
 
         {/* Sección de Videos Testimoniales */}

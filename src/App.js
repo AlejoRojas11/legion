@@ -4,8 +4,8 @@ import Header from './components/Header';
 import Contact from './components/Contact';
 import Body from './components/body';
 import Footer from './components/Footer';
-
 import './styles.css';
+
 
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
     <div>
       <Header />
       <Body/>
-        
+      
        
       <Footer/>
      
