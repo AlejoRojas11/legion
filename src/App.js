@@ -1,24 +1,18 @@
 // src/App.js
 import React from 'react';
 import Header from './components/Header';
-import Contact from './components/Contact';
 import Body from './components/body';
 import Footer from './components/Footer';
-
 import './styles.css';
-
 
 const App = () => {
   return (
-    <div>
+    <div className="app-container">
       <Header />
-      <Body/>
-        
-       
-      <Footer/>
-     
-   
-      
+      <main className="main-content">
+        <Body />
+      </main>
+      <Footer />
     </div>
   );
 };

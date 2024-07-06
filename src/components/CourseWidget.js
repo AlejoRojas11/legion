@@ -1,37 +1,100 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
-import { FaCalendar, FaClock, FaDollarSign } from 'react-icons/fa';
-/* import courseImage from './path-to-your-image.jpg'; */
-import './Body.css'; // Asegúrate de tener una imagen
+import { FaCalendar, FaClock, FaDollarSign, FaWhatsapp } from 'react-icons/fa';
+import './Body.css';
+import Estu from './img/Estudiantes.JPG'
+import Tijeras from './img/Tijeras.JPG'
 
-const CourseWidget = () => {
+const CourseWidget = ({ title, subtitle, details, price, paymentOptions, buttonText, whatsappLink, backgroundImage }) => {
   return (
-    <Card className="course-widget text-center">
-     {/*  */}
+    <Card className="course-widget" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <Card.Body>
-        <Card.Title className="widget-title">Curso Avanzado de Barbería</Card.Title>
-        <Card.Text className="widget-subtitle">¡Inscríbete ahora y lleva tus habilidades al siguiente nivel!</Card.Text>
-        
+        <Card.Title className="widget-title">{title}</Card.Title>
+        <Card.Subtitle className="widget-subtitle">{subtitle}</Card.Subtitle>
         <div className="widget-info">
-          <p><FaCalendar /> Inicio: 30 de julio</p>
-          <p><FaClock /> Horario: Martes, 3 - 7 P.M.</p>
-          <p><FaDollarSign /> Costo: 600.000 pesos</p>
+          {details.map((detail, index) => (
+            <p key={index}>{detail}</p>
+          ))}
         </div>
-        
+        <p><FaDollarSign /> Costo: {price} pesos</p>
         <div className="widget-payment-options">
           <p>Opciones de pago:</p>
           <ul>
-            <li>Pago de contado</li>
-            <li>4 cuotas de 150.000 pesos</li>
+            {paymentOptions.map((option, index) => (
+              <li key={index}>{option}</li>
+            ))}
           </ul>
         </div>
-        
-        <Button variant="primary" size="lg" className="widget-button">
-          ¡Asegura tu lugar ahora!
-        </Button>
+        {whatsappLink ? (
+          <Button href={whatsappLink} target="_blank" variant="success" className="widget-button">
+            <FaWhatsapp /> {buttonText}
+          </Button>
+        ) : (
+          <Button variant="primary" className="widget-button">{buttonText}</Button>
+        )}
       </Card.Body>
     </Card>
   );
 };
 
-export default CourseWidget;
+const BodyComponent = () => {
+  return (
+    <div className="course-widgets-container">
+      <CourseWidget
+        title="Curso de Barbería"
+        subtitle="Formación profesional en barbería"
+        details={[
+          "Inicio: 30 de julio",
+          "Horario: Martes, 3 - 7 P.M."
+        ]}
+        price="600.000"
+        paymentOptions={[
+          "Pago de contado",
+          "4 cuotas de 150.000 pesos"
+        ]}
+        buttonText="¡Asegura tu lugar ahora!"
+        backgroundImage={Estu}
+      />
+      <CourseWidget
+        title="Curso Avanzado de Barbería"
+        subtitle="Perfecciona tus habilidades"
+        details={[
+          "Duración: 3 meses",
+          "Cupos: 8 por curso"
+        ]}
+        price="650.000"
+        paymentOptions={[
+          "Pago de contado: 650.000 pesos",
+          "4 cuotas (Primera cuota de 165.000 para separar cupo)"
+        ]}
+        buttonText="¡Contáctanos por WhatsApp!"
+        whatsappLink="https://wa.me/p/7278206612262167/573234263937"
+        backgroundImage="/img/clase.jpg"
+      />
+      <CourseWidget
+  title="Masterclass de Barbería"
+  subtitle="Técnicas avanzadas para profesionales"
+  details={[
+    "Corte con tijera avanzado",
+    "Perfeccionamiento de corte",
+    "Diferentes tipos de texturas",
+    "Diseños de tribales pigmentados",
+    "Depilación de cera y depilación con hilo",
+    "Limpieza facial",
+    "Colorimetría en barbería",
+    "Moldeo y peinados",
+    "Técnicas avanzadas para cortes limpios, precisos y a otro nivel"
+  ]}
+  price="700.000"
+  paymentOptions={[
+    "Consulta opciones de pago"
+  ]}
+  buttonText="¡Más información por WhatsApp!"
+  whatsappLink="https://wa.me/p/8273969339283758/573234263937"
+  backgroundImage={Tijeras}
+/>
+    </div>
+  );
+};
+
+export default BodyComponent;

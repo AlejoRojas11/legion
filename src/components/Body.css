@@ -141,3 +141,106 @@ h2 {
 .widget-button:hover {
   background-color: #7a1717;
 }
+.body-container {
+  padding: 20px;
+}
+
+.course-widget {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.course-widget:hover {
+  transform: translateY(-5px);
+}
+
+.course-widget .card-body {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.widget-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.widget-subtitle {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.widget-info p {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.widget-payment-options {
+  font-size: 0.9rem;
+}
+
+.widget-button {
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .widget-title {
+    font-size: 1.3rem;
+  }
+
+  .widget-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .widget-info p,
+  .widget-payment-options {
+    font-size: 0.8rem;
+  }
+
+  .widget-button {
+    font-size: 0.9rem;
+  }
+  @media (max-width: 768px) {
+    .widget-title {
+      font-size: 1.3rem;
+    }
+  
+    .widget-subtitle {
+      font-size: 0.9rem;
+    }
+  
+    .widget-info p,
+    .widget-payment-options,
+    .widget-price {
+      font-size: 0.8rem;
+    }
+  
+    .widget-button {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .body-container {
+      padding: 10px;
+    }
+  
+    .course-widget {
+      margin-bottom: 15px;
+    }
+  
+    .course-widget .card-body {
+      padding: 1rem;
+    }
+  }
+}
