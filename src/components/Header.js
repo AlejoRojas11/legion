@@ -16,7 +16,7 @@ const Header = () => {
               className="logo-img img-fluid mb-2"
               alt="Logo"
             />
-            <span className="fw-bold text-center logo-text" id='Name'>Legion Club Academia</span>
+            <span className="fw-bold text-center Academia" >LEGION <span className='club'> CLUB</span> ACADEMIA</span>
           </Navbar.Brand>
         </Container>
       </div>

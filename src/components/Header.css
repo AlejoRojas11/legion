@@ -37,8 +37,8 @@
   height: auto;
 }
 
-.logo-text {
-  font-size: 4vw; /* Ajusta el tamaño del texto según el ancho de la ventana */
+.Academia {
+  font-size: 7vw; /* Ajusta el tamaño del texto según el ancho de la ventana */
   text-align: center;
   word-wrap: break-word;
   color: rgb(255, 246, 246);
@@ -65,7 +65,7 @@
     width: 150px; /* Ajusta este tamaño según tus necesidades */
   }
 
-  .logo-text {
+  .Academia {
     font-size: 5vw; /* Ajusta el tamaño del texto según el ancho de la ventana */
   }
 }
@@ -75,4 +75,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.club {
+  color: #ece66d;
+  font-family: 'Southland', sans-serif;
+  font-style: italic; /* Agrega cursiva */
+  font-size:60px;
 }

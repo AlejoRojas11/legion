@@ -33,8 +33,7 @@ const Body = () => {
       <Container>
         {/* Sección de Información de la Academia */}
         <section className="my-5">
-        <h2 className="text-center mb-4">Nuestra <span className="module-number">Academia</span> de Barbería</h2>
-
+          <h2 className="text-center mb-4">Nuestra Academia de Barbería</h2>
           <Row>
             <Col md={6}>
               <p>En Leggion Academia, nos enorgullece ofrecer una experiencia única y de calidad en la industria barberil. Nuestra academia está diseñada para aquellos que desean destacarse en el apasionante mundo de la barbería, brindándoles las habilidades y conocimientos necesarios para convertirse en profesionales exitosos.</p>
@@ -47,7 +46,7 @@ const Body = () => {
 
         {/* Nueva sección: Oportunidades de Perfeccionamiento */}
         <section className="my-5">
-          <h2 className="text-center mb-4" > <span className="module-number" > Oportunidades</span> de Perfeccionamiento</h2>
+          <h2 className="text-center mb-4">Oportunidades de Perfeccionamiento</h2>
           <Row>
             <Col md={6}>
               <h3>Curso Básico</h3>
