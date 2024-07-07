@@ -78,13 +78,13 @@
 .course-widget p,
 .course-widget ul,
 .course-widget li span {
-  color: #ece66d;
+  color: #f9f9f2;
 }
 
 /* Estilos específicos para los signos pesos, puntos, paréntesis, comas */
 .course-widget p span,
 .course-widget ul li span {
-  color: #ece66d;
+  color: #ffffff;
 }
 
 /* Media Queries */
@@ -135,5 +135,8 @@
   .widget-button.primary:hover {
     background-color: #ece66d; /* Azul más oscuro al pasar el ratón */
     border-color: #ece66d;
+  }
+  .precio{
+    color: #ece66d !important;
   }
   

@@ -17,7 +17,7 @@ const CourseWidget = ({ title, subtitle, details, price, paymentOptions, buttonT
             <p key={index}>{detail}</p>
           ))}
         </div>
-        <p><FaDollarSign /> Costo: {price} pesos</p>
+        <p className='precio'><FaDollarSign /> Costo: {price} pesos</p>
         <div className="widget-payment-options">
           <p>Opciones de pago:</p>
           <ul>
@@ -53,7 +53,7 @@ const BodyComponent = () => {
           "Pago de contado",
           "4 cuotas de 150.000 pesos"
         ]}
-        buttonText="¡Asegura tu lugar ahora!"
+        buttonText="Contactanos Ahora"
         backgroundImage={Estu}
       />
       <CourseWidget

@@ -34,7 +34,7 @@ const Body = () => {
         {/* Sección de Información de la Academia */}
         <section className="my-5">
           <h2 className="text-center mb-4">
-           NUESTRA <span className="module-number">ACADEMIA </span> DE BARBERIA
+            NUESTRA <span className="module-number">ACADEMIA </span> DE BARBERIA
           </h2>
 
           <Row>
@@ -62,45 +62,77 @@ const Body = () => {
         <section className="my-5">
           <h2 className="text-center mb-4">
             {" "}
-            <span className="module-number">CURSOS</span> DE 
-           LEGION ACADEMIA
+            <span className="module-number">CURSOS</span> DE
+            LEGION ACADEMIA
           </h2>
           <Row>
-            <Col md={6}>
-              <h3>Curso Básico</h3>
-              <p>
-                Si realmente quieres perfeccionarte en el corte y desvanecido de
-                cabello masculino, te recomendamos hacer el curso básico. Este
-                curso está dedicado completamente al desvanecido y corte de
-                cabello de hombre. ✂️👨‍🦰
-              </p>
-            </Col>
-            <Col md={6}>
-              <h3>Curso Avanzado</h3>
-              <p>
-                En el curso avanzado, exploramos otros servicios en barbería
-                como:
-              </p>
-              <ul>
-                <li>
-                  <span className="list-dot">•</span> Limpiezas faciales 🧖‍♂️
-                </li>
-                <li>
-                  <span className="list-dot">•</span> Decoloración en barbería
-                  💈
-                </li>
-                <li>
-                  <span className="list-dot">•</span> Pigmentación de cejas y
-                  barbas con diferentes pigmentos 🎨
-                </li>
-                <li>
-                  <span className="list-dot">•</span> Depilación con hilo ✨
-                </li>
-                <li>
-                  <span className="list-dot">•</span> Peinados creativos 💇‍♂️
-                </li>
-              </ul>
-            </Col>
+          <Container>
+  <Row>
+    <Col md={4}>
+      <h3>Curso Básico</h3>
+      <p>
+        <strong>📚 Estructura del Curso:</strong><br />
+        <strong>📅 Total:</strong> 12 clases
+        <ul>
+          <li>📝 3 clases teóricas</li>
+          <li>🛠️ 9 clases prácticas</li>
+        </ul>
+        <strong>📘 Distribución:</strong><br />
+        Las 3 clases teóricas se distribuyen a lo largo del curso. Al final, se lleva a cabo un examen práctico.<br />
+        <strong>🏆 Certificación:</strong>
+        <ul>
+          <li>Si pasas el examen, recibirás un <strong className="certificado">certificado de aprobación</strong>.</li>
+          <li>Si no lo pasas, el profesor puede ofrecerte una <strong>habilitación</strong>.</li>
+          <li>En caso de no aprobar el curso, recibirías un <strong>certificado de asistencia</strong>.</li>
+        </ul>
+        ¡Estamos aquí para apoyarte en cada paso del camino! 🌟
+      </p>
+      <Button variant="primary">Deseas saber todo sobre el curso</Button>
+    </Col>
+
+    <Col md={4}>
+      <h3>Curso Intermedio</h3>
+      <p>
+        <strong>📚 Estructura del Curso:</strong><br />
+        <strong>📅 Total:</strong> 15 clases
+        <ul>
+          <li>📝 5 clases teóricas</li>
+          <li>🛠️ 10 clases prácticas</li>
+        </ul>
+        <strong>📘 Distribución:</strong><br />
+        Las clases teóricas y prácticas se distribuyen a lo largo del curso, incluyendo trabajos en grupo y estudios de caso.<br />
+        <strong>🏆 Certificación:</strong>
+        <ul>
+          <li>Examen teórico y práctico al finalizar el curso.</li>
+          <li>Certificado de aprovechamiento al aprobar los exámenes.</li>
+          <li>Certificado de participación si no apruebas.</li>
+        </ul>
+        ¡Tu avance es nuestro objetivo! 🚀
+      </p>
+      <Button variant="primary">Deseas saber todo sobre el curso</Button>
+    </Col>
+
+    <Col md={4}>
+      <h3>Curso Avanzado</h3>
+      <p>
+        En el curso avanzado, exploramos otros servicios en barbería como:
+      </p>
+      <ul>
+        <li>🧖‍♂️ Limpiezas faciales</li>
+        <li>💈 Decoloración en barbería</li>
+        <li>🎨 Pigmentación de cejas y barbas con diferentes pigmentos</li>
+        <li>✨ Depilación con hilo</li>
+        <li>💇‍♂️ Peinados creativos</li>
+      </ul>
+      <p>
+        <strong>🏆 Certificación:</strong><br />
+        Al finalizar, se realiza un proyecto final evaluado por profesionales del sector.<br />
+        Certificado de especialista en barbería avanzada.
+      </p>
+      <Button variant="primary">Deseas saber todo sobre el curso</Button>
+    </Col>
+  </Row>
+</Container>
           </Row>
         </section>
 
