@@ -5,6 +5,7 @@ import ContactForm from "./Contact";
 import CourseWidget from "./CourseWidget";
 import clase from "./img/clase.JPG";
 import bgBody from "./img/bgBody.mp4";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const videoRef = useRef(null);
@@ -87,7 +88,9 @@ const Body = () => {
         </ul>
         ¡Estamos aquí para apoyarte en cada paso del camino! 🌟
       </p>
+      <Link to='/Course1' className="text-decoration-none">
       <Button variant="primary">Deseas saber todo sobre el curso</Button>
+      </Link>
     </Col>
 
     <Col md={4}>
@@ -109,7 +112,9 @@ const Body = () => {
         </ul>
         ¡Tu avance es nuestro objetivo! 🚀
       </p>
+      <Link to='/Course2' className="text-decoration-none">
       <Button variant="primary">Deseas saber todo sobre el curso</Button>
+      </Link>
     </Col>
 
     <Col md={4}>
@@ -129,7 +134,9 @@ const Body = () => {
         Al finalizar, se realiza un proyecto final evaluado por profesionales del sector.<br />
         Certificado de especialista en barbería avanzada.
       </p>
+      <Link to='/Course3' className="text-decoration-none">
       <Button variant="primary">Deseas saber todo sobre el curso</Button>
+      </Link>
     </Col>
   </Row>
 </Container>
