@@ -1,0 +1,120 @@
+.course-container {
+    padding: 2rem 0;
+    background-color: rgba(47, 46, 46, 0.59);
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .course-title {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .course-section {
+    margin-bottom: 3rem;
+  }
+  
+  .course-section h2 {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+  }
+  
+  .course-section h2 svg {
+    margin-right: 0.5rem;
+  }
+  
+  .info-card {
+    height: 100%;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  
+  .info-card h3 {
+    color: #A31E1E;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  .info-card ul {
+    padding-left: 1.2rem;
+  }
+  
+  .info-card li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .highlight-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-left: 5px solid #A31E1E;
+  }
+  
+  .support-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    margin-top: 2rem;
+  }
+  
+  .support-card h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+  }
+  
+  .module-number {
+    color: #ece66d;
+    font-weight: bold;
+  }
+  
+  .list-dot {
+    color: #A31E1E;
+    margin-right: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .course-title {
+      font-size: 2rem;
+    }
+  
+    .course-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .info-card {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .course-container {
+      padding: 1rem 0;
+    }
+  
+    .course-title {
+      font-size: 1.5rem;
+    }
+  
+    .course-section h2 {
+      font-size: 1.3rem;
+    }
+  
+    .info-card h3 {
+      font-size: 1.1rem;
+    }
+  }
