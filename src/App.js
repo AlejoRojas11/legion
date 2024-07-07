@@ -5,6 +5,7 @@ import Body from './components/body';
 import Footer from './components/Footer'; // Importa tu componente Curso1
 import './styles.css';
 import Course1 from './components/Courses/Course1';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
